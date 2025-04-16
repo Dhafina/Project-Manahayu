@@ -1,43 +1,58 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const navLinks = document.querySelectorAll('.nav-link');
+document.addEventListener("DOMContentLoaded", function () {
+  // Load Header & Footer
+  loadComponent("header", "componen/header.html");
+  loadComponent("footer-container", "componen/footer.html");
 
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            document.querySelector('.nav-link.active').classList.remove('active');
-            this.classList.add('active');
-        });
+  // Book Now Button
+  const bookNowBtn = document.querySelector('.book-now');
+  if (bookNowBtn) {
+    bookNowBtn.addEventListener('click', () => {
+      alert("Redirect to booking page");
     });
+  }
+
+  // Signup Button
+  const signupBtn = document.querySelector('.signup-btn');
+  if (signupBtn) {
+    signupBtn.addEventListener('click', () => {
+      alert("Redirect to sign-up page");
+    });
+  }
+
+  // Login Button
+  const loginBtn = document.querySelector('.login-btn');
+  if (loginBtn) {
+    loginBtn.addEventListener('click', () => {
+      alert("Redirect to login page");
+    });
+  }
+
+  // Order Now Button
+  const orderNowBtn = document.querySelector('.order-now');
+  if (orderNowBtn) {
+    orderNowBtn.addEventListener('click', () => {
+      alert("Redirect to order page");
+    });
+  }
+
+  // See All Button
+  const seeAllBtn = document.querySelector('.see-all');
+  if (seeAllBtn) {
+    seeAllBtn.addEventListener('click', () => {
+      alert("See all available menu items or packages");
+    });
+  }
 });
 
-// Fungsi untuk memuat komponen header & footer
 function loadComponent(containerId, file, callback) {
   fetch(file)
-      .then(response => response.text())
-      .then(data => {
-          document.getElementById(containerId).innerHTML = data;
-          if (callback) callback();
-      })
-      .catch(error => console.error("Error loading " + file, error));
+    .then(response => {
+      if (!response.ok) throw new Error("HTTP error " + response.status);
+      return response.text();
+    })
+    .then(data => {
+      document.getElementById(containerId).innerHTML = data;
+      if (callback) callback();
+    })
+    .catch(error => console.error("Error loading " + file, error));
 }
--                                                                          
-// Add any JS functionality as needed
-document.querySelector('.book-now').addEventListener('click', () => {
-    alert("Redirect to booking page");
-  });
-  
-  document.querySelector('.signup-btn').addEventListener('click', () => {
-    alert("Redirect to sign-up page");
-  });
-  
-  document.querySelector('.login-btn').addEventListener('click', () => {
-    alert("Redirect to login page");
-  });
-
-  // Add any JS functionality as needed
-document.querySelector('.order-now').addEventListener('click', () => {
-    alert("Redirect to order page");
-  });
-  
-  document.querySelector('.see-all').addEventListener('click', () => {
-    alert("See all available menu items or packages");
-  });
