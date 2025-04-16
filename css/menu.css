@@ -1,0 +1,233 @@
+*{
+    font-family: Poppins;
+    src: url(fonts/Poppins-Medium.ttf);
+  }
+  
+  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3A2301;
+    padding: 15px 20px;
+    color: white;
+    font-size: 15px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover{
+  color: #B1C399;
+}
+
+
+.navbar ul li a.active {
+    color: #B1C399;
+}
+  
+
+/* Menu Section */
+.menu {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.menu h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.menu p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Featured Menu */
+.featured-menu {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.featured-item {
+    flex: 2;
+    max-width: 100%;
+}
+
+.featured-item img {
+    width: 100%; /* Agar gambar menyesuaikan lebar kontainer */
+    height: 900px; /* Tinggi tetap */
+    object-fit: cover; /* Potong gambar agar tetap proporsional tanpa distorsi */
+    border-radius: 5px;
+}
+@media (max-width: 768px) {
+    .featured-item img {
+        height: 300px; /* Ukuran lebih kecil di layar HP */
+    }
+}
+
+
+.top-products {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.product img {
+    width: 100%; /* Agar mengisi lebar kontainer */
+    height: 360px; /* Tinggi tetap agar konsisten */
+    object-fit: cover; /* Memastikan gambar tetap proporsional dan memenuhi area */
+    border-radius: 5px;
+}
+@media (max-width: 768px) {
+    .product img {
+        height: 200px; /* Ukuran lebih kecil untuk layar HP */
+    }
+}
+
+
+/* All Menu */
+.all-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.menu-item {
+    flex: 1 1 calc(33.33% - 20px); /* 3 kolom di desktop */
+    text-align: left;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 300px; /* Tinggi tetap agar konsisten */
+    object-fit: cover; /* Memastikan gambar tetap proporsional tanpa distorsi */
+    border-radius: 5px;
+}
+
+/* Responsif untuk tampilan HP */
+@media (max-width: 768px) {
+    .menu-item {
+        flex: 1 1 calc(50% - 20px); /* 2 kolom di tablet/HP */
+    }
+
+    .menu-item img {
+        height: 200px; /* Ukuran gambar lebih kecil di HP */
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-item {
+        flex: 1 1 100%; /* 1 kolom di layar kecil */
+    }
+
+    .menu-item img {
+        height: 180px; /* Sesuaikan tinggi gambar */
+    }
+}
+
+
+/* Contact Section */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a2b48c;
+    padding: 20px;
+}
+
+.contact .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.primary-btn {
+    background-color: #4a3b1b;
+    color: white;
+}
+
+.secondary-btn {
+    background-color: white;
+    color: #4a3b1b;
+    border: 1px solid #4a3b1b;
+}
+
+/* Footer */
+footer {
+    background-color: #4a2c09; /* Warna coklat gelap */
+    color: white;
+    padding: 30px 50px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .footer-left h2 {
+    margin-bottom: 20px;
+  }
+  
+  .social-icons i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .footer-right {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .footer-column h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .footer-column p {
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+  
+    .footer-right {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+  }

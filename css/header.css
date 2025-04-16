@@ -1,0 +1,44 @@
+.header {
+    background-color: #3d7054; /* warna hijau seperti di gambar */
+    padding: 10px 40px;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+  }
+  
+  .nav-left,
+  .nav-right {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+  
+  .nav-left li a,
+  .nav-right li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .logo {
+    text-align: center;
+    color: white;
+    font-family: 'Georgia', serif;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
+  
+  .logo span {
+    font-size: 14px;
+    font-style: italic;
+  }
+  

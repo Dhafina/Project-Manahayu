@@ -1,0 +1,346 @@
+@import "tailwindcss";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: white;
+}
+
+
+/* NAVBAR */
+.main-header {
+  background-color: #3d7054;
+  padding: 10px 30px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  flex-wrap: wrap;
+}
+
+/* Navigation Left & Right */
+.nav-left,
+.nav-right {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Nav Links */
+.nav-left li a,
+.nav-right li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+/* Logo Center */
+.logo {
+  text-align: center;
+  color: white;
+  font-family: 'Georgia', serif;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.2;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.logo span {
+  margin-top: 2px;
+  font-size: 14px;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+
+
+/* Hero section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  height: 500px;
+  overflow: hidden;
+}
+
+
+.hero-text {
+  max-width: 800px;
+  margin-bottom: 20px;
+  text-align: center;
+  z-index: 2;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.hero-text h1 {
+  font-size: 60px;
+  margin-bottom: 5px;
+  line-height: 1.1;
+}
+
+.hero-text span {
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.book-now {
+  background-color: #527952;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+
+.book-now:hover {
+  background-color: #3c4524;
+}
+
+.hero-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  filter: brightness(50%); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.motto {
+  text-align: center;
+  padding: 30px 50px 50px;
+}
+
+.motto h2 {
+  color: #3E7B5C;
+  font-family: 'Playfair Display', serif;
+}
+
+.section-title p {
+  /* font-family: Poppins;
+  src: url(fonts/Poppins-Medium.ttf); */
+  font-size: 20px;
+}
+
+.rooms {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  padding: 100px;
+}
+
+.room-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 250px;
+  text-align: center;
+  background: white;
+  padding-bottom: 50px;
+}
+
+.room-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.room-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.room-card p {
+  font-size: 14px;
+  margin: 5px;
+}
+
+.room-card button {
+  margin: 10px;
+  padding: 8px 16px;
+  background-color: #3b6950;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.about {
+  background-color: #c2d6cc;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.about img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-text h2 {
+  /* font-family: 'Playfair Display', serif; */
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #3b6950;
+}
+
+.about-text p {
+  /* font-family: Poppins;
+  src: url(fonts/Poppins-Medium.ttf); */
+  font-size: 16px;
+}
+
+.testimonial-section {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 150px;
+}
+
+.testi-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+  z-index: 1;
+  
+}
+
+.testimonial-card {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  max-width: 600px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.stars {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+.testimonial-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  /* font-family: Poppins;
+  src: url(fonts/Poppins-Medium.ttf); */
+}
+
+.visitor-name {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #222;
+  /* font-family: Poppins;
+  src: url(fonts/Poppins-Medium.ttf); */
+}
+
+.visit-date {
+  font-size: 12px;
+  color: #444;
+  margin-top: 5px;
+  /* font-family: Poppins;
+  src: url(fonts/Poppins-Medium.ttf); */
+}
+
+/* body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #fff;
+} */
+
+.footer {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.brand-name {
+  margin: 10px 0 0;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+.tagline {
+  margin: 0;
+  font-style: italic;
+  font-size: 14px;
+  color: #555;
+}
+
+.footer-nav {
+  margin-top: 30px;
+}
+
+.footer-nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+
