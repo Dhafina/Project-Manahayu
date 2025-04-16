@@ -15,7 +15,7 @@ body {
 
 
 /* NAVBAR */
-.main-header {
+/* .main-header {
   background-color: #3d7054;
   padding: 10px 30px;
 }
@@ -26,10 +26,10 @@ body {
   align-items: center;
   color: white;
   flex-wrap: wrap;
-}
+} */
 
 /* Navigation Left & Right */
-.nav-left,
+/* .nav-left,
 .nav-right {
   display: flex;
   list-style: none;
@@ -39,15 +39,15 @@ body {
 }
 
 /* Nav Links */
-.nav-left li a,
+/* .nav-left li a,
 .nav-right li a {
   text-decoration: none;
   color: white;
   font-size: 16px;
-}
+} */
 
 /* Logo Center */
-.logo {
+/* .logo {
   text-align: center;
   color: white;
   font-family: 'Georgia', serif;
@@ -70,7 +70,7 @@ body {
   font-size: 14px;
   font-style: italic;
   white-space: nowrap;
-}
+} */
 
 
 
