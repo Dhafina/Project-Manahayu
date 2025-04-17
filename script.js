@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Load Header & Footer
   loadComponent("header", "component/header.html");
-  loadComponent("footer-container", "componen/footer.html");
+  loadComponent("footer", "component/footer.html");
 
   // Book Now Button
   const bookNowBtn = document.querySelector('.book-now');

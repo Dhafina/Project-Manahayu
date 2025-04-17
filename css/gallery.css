@@ -11,7 +11,7 @@
   }
   
   
-  /* NAVBAR */
+  /* NAVBAR
   .main-header {
     background-color: #3d7054;
     padding: 10px 30px;
@@ -23,28 +23,28 @@
     align-items: center;
     color: white;
     flex-wrap: wrap;
-  }
+  } */
   
   /* Navigation Left & Right */
-  .nav-left,
+  /* .nav-left,
   .nav-right {
     display: flex;
     list-style: none;
     gap: 20px;
     padding: 0;
     margin: 0;
-  }
+  } */
   
   /* Nav Links */
-  .nav-left li a,
+  /* .nav-left li a,
   .nav-right li a {
     text-decoration: none;
     color: white;
     font-size: 16px;
-  }
+  } */
   
   /* Logo Center */
-  .logo {
+  /* .logo {
     text-align: center;
     color: white;
     font-family: 'Georgia', serif;
@@ -53,9 +53,9 @@
     flex-direction: column;
     align-items: center;
     line-height: 1.2;
-  }
+  } */
   
-  .logo h1 {
+  /* .logo h1 {
     margin: 0;
     font-size: 24px;
     letter-spacing: 2px;
@@ -67,7 +67,7 @@
     font-size: 14px;
     font-style: italic;
     white-space: nowrap;
-  }
+  } */
 
 
 

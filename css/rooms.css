@@ -8,11 +8,10 @@
   body {
     font-family: 'Georgia', serif;
     background-color: #fff;
-    padding: 20px;
   }
   
   /* ========== NAVBAR ========== */
-  .main-header {
+  /* .main-header {
     background-color: #3d7054;
     padding: 10px 30px;
   }
@@ -64,7 +63,7 @@
     font-size: 14px;
     font-style: italic;
     white-space: nowrap;
-  }
+  } */
 
 
   .room-hero {
